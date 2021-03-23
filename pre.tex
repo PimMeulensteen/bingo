@@ -1,8 +1,21 @@
 \documentclass[12pt]{article} \usepackage{eso-pic, graphicx}
-\usepackage[top=2cm, bottom=2cm, outer=0cm, inner=0cm]{geometry}
+\usepackage[paperheight=1058pt, paperwidth=1058pt, top=2cm, bottom=2cm, outer=2cm, inner=2cm]{geometry}
+\usepackage{xcolor, tcolorbox}
+\usepackage[framemethod=TikZ]{mdframed}
 \nofiles
+\definecolor{blueish}{HTML}{f1faff}
 \newcommand{\background}[1]{%
 \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{#1}}
 }\begin{document}
 \pagenumbering{gobble}
-\tabcolsep=30.2pt \renewcommand{\arraystretch}{4.5}  \topskip0pt \vspace*{4.3cm} \begin{center}  \begin{tabular}{c c c c}
+\tabcolsep=1.5pt \renewcommand{\arraystretch}{.2}  \topskip0pt
+\vspace*{200pt}
+\centering
+\resizebox{.8\textwidth}{!}{%
+\begin{tcolorbox}[rounded corners,
+    colback=blueish,
+    colframe=blueish,
+    arc=20pt,
+    hbox]
+\centering
+\begin{tabular}{ccccc}
