@@ -1,4 +1,4 @@
-from typing import List, TextIO
+from typing import Callable, List, TextIO, Union, Tuple
 import random
 import os
 
@@ -118,7 +118,6 @@ def create_n_random_cards(list_songs: List[CardItem], n=50) -> List[List[CardIte
 
 
 def main():
-
     songs = read_from_file()
     print(f"Read {len(songs)} word{'s' if len(songs) != 1 else ''} from file")
 
@@ -131,11 +130,11 @@ def main():
 
     else:
         list_list_songs = create_n_random_cards(songs, 50)
-
         for card in list_list_songs:
             write_to_latex(card)
 
         all_latex_to_pdf()
+
 
 
 if __name__ == "__main__":

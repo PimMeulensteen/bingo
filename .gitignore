@@ -1,1 +1,10 @@
 data/
+songs.txt
+.gitignore
+*.zip
+*.log
+*.fls
+*.aux
+*latexmk
+*.gz
+
